@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Mediacollege Reponsive Menu">
+  <meta name="keywords" content="Mediacollege Responsive Menu">
+  <meta name="author" content="Tin Xian">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tin Xian - Responsive Menu</title>
+  <link rel="stylesheet" href="menu.css">
+  <link rel="shortcut icon" type="image/png" href="https://tinxian.nl/wp-content/uploads/2018/10/logo-small-retina.png" />
+  <style>
+  #toggleLabel::before {
+    content: "\2630";
+    cursor: pointer;
+    margin-left: 0;
+    transition: margin-left .6s cubic-bezier(0,0,0,1);
+  }
+  #toggleMenu:checked ~ main #toggleLabel::before {
+    content: "\2716";
+    margin-left: 4.5em;
+    transition: margin-left .6s cubic-bezier(0,0,0,1);
+  }
+    nav {
+      position: absolute;
+      z-index:1;
+      margin-left: -10em;
+      background-color: #333;
+      height: 100vh;
+
+    }
+    #toggleMenu:checked ~ nav {
+      margin-left: 0;
+      transition: margin-left .6s cubic-bezier(0,0,0,1);
+    }
+    main {
+      position: relative;
+    }
+  </style>
+</head>
+
+<body lang="nl">
+  <input type="checkbox" id="toggleMenu">
+  <nav>
+    <h4>menu</h4>
+    <ul>
+      <li>
+        <a href="index.html">inhoud schuift</a>
+      </li>
+      <li>
+        <a href="menuSchuift.html" class="actief">menu schuift</a>
+      </li>
+      <li>
+        <a href="allesSchuift.html">alles schuift</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <label for="toggleMenu" id="toggleLabel"></label>
+    <h1>Koala</h1>
+    <p><img style="max-width: 250px;" src="https://upload.wikimedia.org/wikipedia/commons/0/06/Koala.jpg" alt="Koala">De koala of buidelbeer (Phascolarctos cinereus) is een buideldier uit de familie koala's (Phascolarctidae) die voorkomt in het
+      oosten
+      van Australië. De Oudgriekse woorden φάσκωλος en ἄρκτος betekenen respectievelijk "buidel" en "beer". Het Latijnse cinereus betekent "askleurig".
+      Door zijn teddybeer-achtige uiterlijk wordt hij vaak ten onrechte als een beer beschouwd.
+      "Koala" komt uit het Dharuk, een uitgestorven aboriginaltaal die rond Sydney werd gesproken. Het zou zoiets betekenen als "drinkt niet", verwijzend naar het feit dat de koala zelden drinkt (zie onder). De koala, zoals vele andere inheemse
+      Australische dieren, speelt een belangrijke rol in de aboriginal-mythe over het ontstaan van de wereld.
+    </p>
+    <p>Het mannetje weegt zo'n 12 kilo, het vrouwtje 8 kilo. Ze worden ongeveer 65 tot 75 cm lang. In het noorden wegen koala's bijna de helft minder. Zuidelijke koala's hebben een dikkere vacht dan die in het warmere noorden. De kleuren van de
+      vachten variëren sterk per individu en worden lichter naarmate koala's ouder worden, maar de meeste zijn grijs met wit op de kin, borst, voorpoten en romp. Koala's hebben een korte staart, die geen functie lijkt te hebben.
+      <div id="validatie">
+        <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+          <img src="http://blog.boyet.com/blog/files/media/image/valid-html5-blue.png" alt="Valide HTML5"></a>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+          <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+        </a>
+      </div>
+  </main>
+</body>
+
+</html>

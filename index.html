@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Mediacollege Reponsive Menu">
+  <meta name="keywords" content="Mediacollege Responsive Menu">
+  <meta name="author" content="Tin Xian">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tin Xian - Responsive Menu</title>
+  <link rel="stylesheet" href="menu.css">
+  <link rel="shortcut icon" type="image/png" href="https://tinxian.nl/wp-content/uploads/2018/10/logo-small-retina.png" />
+  <style>
+    #toggleMenu:checked ~ main {
+    margin-left: 10em;
+  }
+  #toggleLabel::before {
+    content: "\2630";
+    cursor: pointer;
+
+  }
+  #toggleMenu:checked ~ main #toggleLabel::before {
+    content: "\2716";
+  }
+    nav {
+      position: fixed;
+    }
+    main {
+      position: absolute;
+      margin-left: 0;
+      transition: margin-left .6s cubic-bezier(0,0,0,1);
+    }
+  </style>
+</head>
+
+<body lang="nl">
+  <input type="checkbox" id="toggleMenu">
+  <nav>
+    <h4>menu</h4>
+    <ul>
+      <li>
+        <a href="index.html" class="actief">inhoud schuift</a>
+      </li>
+      <li>
+        <a href="menuSchuift.html">menu schuift</a>
+      </li>
+      <li>
+        <a href="allesSchuift.html">alles schuift</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <label for="toggleMenu" id="toggleLabel"></label>
+    <h1>Lieverheers&shy;beestje</h1>
+    <p><img src="https://www.plusonline.nl/sites/plusonline/files/lieveheersbeestje.jpg" alt="lieveheersbeestje">Lieveheersbeestjes (Coccinellidae) zijn een groep van kevers (Coleoptera). Sommige soorten zijn zeer bekend, omdat ze algemeen
+      voorkomen, bijvoorbeeld het zevenstippelig lieveheersbeestje (Coccinella septempunctata).
+      Lieveheersbeestjes leven zowel van planten en schimmels als van kleine diertjes en veel soorten zijn sterk gespecialiseerd. De bladluisetende soorten worden vaak als nuttig gezien, maar soorten die schimmels of planten eten, verspreiden
+      ziektes en worden beschouwd als plaaginsecten.
+    </p>
+    <p>Lieveheersbeestjes hebben een ronde, vaak halfbolvormige vorm met korte pootjes die net als de kleine antennes onder het dek- en nekschild kunnen worden teruggetrokken. Ze hebben vaak rode, gele, witte, zwarte en oranje kleuren en zijn vaak
+      gestippeld.
+      In België en Nederland komt een zestigtal soorten voor met een grootte van 2 tot 10 millimeter. De kevers en de larven zijn vaak roofdieren van onder andere bladluizen (die vaak worden beschermd door mieren vanwege hun zoete afscheiding), maar
+      er zijn ook lieveheersbeestjes met een plantaardig dieet.
+      De meeste lieveheersbeestjes leven ongeveer een jaar. Het aantal stippen zegt dus niets over de leeftijd. De kleur en de vlekken op de dekschilden spelen wel een belangrijke rol bij het op naam brengen van de verschillende soorten.</p>
+      <div id="validatie">
+        <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+          <img src="http://blog.boyet.com/blog/files/media/image/valid-html5-blue.png" alt="Valide HTML5"></a>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+          <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+        </a>
+      </div>
+  </main>
+
+</body>
+
+</html>
